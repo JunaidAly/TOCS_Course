@@ -13,6 +13,6 @@ pipeline {
                 echo 'Testing App...'
                 bat 'node App.js'
             }
-        }
-    }
+}
+}
 }
