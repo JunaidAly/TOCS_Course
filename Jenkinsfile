@@ -1,18 +1,18 @@
 pipeline {
     agent any
-    
+
     stages {
-        stage('Clone Repository') {
-            steps {
-                // Clone the Git repository
-                git 'https://github.com/JunaidAly/TOCS_Course.git'
-            }
-        }
         stage('Build') {
             steps {
-                // Run Python script directly 
-                bat 'node App.js'
+                echo 'Building App...'
+                bat  'node --version'
             }
         }
-    }
+        stage('Test') {
+            steps {
+                echo 'Testing App...'
+                bat 'node app.js'
+            }
+        }
+    }
 }
