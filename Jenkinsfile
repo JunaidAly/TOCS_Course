@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run Python script directly 
-                sh 'node App.js'
+                bat 'node App.js'
             }
         }
     }
