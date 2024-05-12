@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing App...'
-                bat 'node app.js'
+                bat 'node App.js'
             }
         }
     }
