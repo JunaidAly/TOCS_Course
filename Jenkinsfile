@@ -17,7 +17,7 @@ pipeline {
                 sh 'gcloud compute scp /var/lib/jenkins/workspace/Assignment-4_main/projects.html root@apache-server:/var/www/html --zone=us-central1-f'
                 sh 'gcloud compute scp /var/lib/jenkins/workspace/Assignment-4_main/about.html root@apache-server:/var/www/html --zone=us-central1-f'
                 sh 'gcloud compute scp /var/lib/jenkins/workspace/Assignment-4_main/contact.html root@apache-server:/var/www/html --zone=us-central1-f'
-                sh 'gcloud compute scp -r images /var/lib/jenkins/workspace/Assignment-4_main/assests/profile.jpg root@apache-server:/var/www/html --zone=us-central1-f'
+                sh 'gcloud compute scp /var/lib/jenkins/workspace/Assignment-4_main/assests/profile.jpg root@apache-server:/var/www/images --zone=us-central1-f'
             }
 }
 }
