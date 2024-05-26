@@ -34,6 +34,40 @@
         .container {
             padding: 2rem;
         }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form div {
+            margin-bottom: 1rem;
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background: #333;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #555;
+        }
         footer {
             text-align: center;
             padding: 1rem;
@@ -56,8 +90,25 @@
         <a href="contact.html">Contact</a>
     </nav>
     <div class="container">
-        <h2>Contact</h2>
-        <p>This section contains contact information.</p>
+        <h2>Contact Us</h2>
+        <p>If you have any questions, please fill out the form below to get in touch with us.</p>
+        <form >
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
     </div>
     <footer>
         &copy; 2024 My Portfolio
