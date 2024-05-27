@@ -34,6 +34,36 @@
         .container {
             padding: 2rem;
         }
+        .intro, .projects, .contact-cta {
+            margin-bottom: 2rem;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .project-item {
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1rem;
+            flex: 1 1 calc(33% - 2rem);
+            box-sizing: border-box;
+        }
+        .contact-cta {
+            text-align: center;
+        }
+        .contact-cta a {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .contact-cta a:hover {
+            background: #555;
+        }
         footer {
             text-align: center;
             padding: 1rem;
@@ -56,8 +86,26 @@
         <a href="contact.html">Contact</a>
     </nav>
     <div class="container">
-        <h2>Home</h2>
-        <p>This is the homepage of my portfolio. Explore the sections to know more about me and my work.</p>
+        <div class="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-item">
+                <h3>Project One</h3>
+                <p>A brief description of Project One, highlighting its key features and technologies used.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project Two</h3>
+                <p>A brief description of Project Two, highlighting its key features and technologies used.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project Three</h3>
+                <p>A brief description of Project Three, highlighting its key features and technologies used.</p>
+            </div>
+        </div>
+        <div class="contact-cta">
+            <h2>Get in Touch</h2>
+            <p>Interested in working together or have any questions? Feel free to reach out!</p>
+            <a href="contact.html">Contact Me</a>
+        </div>
     </div>
     <footer>
         &copy; 2024 My Portfolio
